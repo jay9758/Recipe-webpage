@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 100%;
+            margin: auto;
+        }
+        .box1, .box2 {
+            background-color: antiquewhite;
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+        #kaju, #jalebi {
+            color: slategray;
+        }
+        .box2 {
+            background-color: thistle;
+        }
+        .boxd, .boxb {
+            transition: all 1s linear 0s;
+        }
+        .boxd:hover {
+            transform: rotate(360deg);
+        }
+        .boxb:hover {
+            transform: scale(0.90);
+        }
+        .name {
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        nav {
+            background-color: powderblue;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+        .tabs {
+            font-size: 20px;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        footer {
+            background-color: powderblue;
+            padding: 10px;
+            height: 50px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .policy {
+            font-size: 20px;
+        }
+        .boxa, .boxc {
+            flex: 1;
+            padding: 10px;
+        }
+        .boxb, .boxd {
+            flex: 1;
+            padding: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .name {
+                font-size: 30px;
+            }
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            .tabs {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .box1, .box2 {
+                flex-direction: column;
+            }
+            .boxa, .boxc {
+                width: 100%;
+            }
+            .boxb, .boxd {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="name"><p id="name">FOODY DUNIA</p></div>
+            <div class="tabs">
+                <a href="">home</a>
+                <a href="">contacts</a>
+                <a href="">about</a>
+            </div>
+        </nav>
+        <hr>
+        <div class="box1">
+            <div class="boxa">
+                <h1 id="kaju">kaju katli</h1><br>
+                <p><h4>INGREDIENTS-</h4>
+                  ▢1.85 cup cashew / kaju <br>
+                  ▢0.93 cup sugar <br>
+                  ▢0.46 cup water <br>
+                  ▢0.93 tsp ghee / clarified butter <br>
+                  ▢0.23 tsp cardamom powder</p><br>
+                <p><h4>INSTRUCTIONS</h4>
+                    <ol>
+                        <li>Grind cashews to a fine powder. To make this traditional sweet dish at home, you need to begin with preparing the cashew nut powder. Take 1 1/2 cup cashew nuts and grind them, make sure you don't grind them too much as the cashews might release the oil, which can make the powder coarse. Then using a sieve, extract the fine powder and keep it aside.</li>
+                        <li>Prepare the sugar & cashew powder mixture. In the meantime, heat a pan over medium flame and add water along with sugar. Keep stirring till the sugar starts dissolving. Once the blend starts boiling, reduce the flame and add the fine cashew nut powder. Keep stirring and make sure the blend is smooth and has a slightly thick consistency. If you are fond of ghee, add some ghee to this mixture, this will add a nice taste and aroma to this dish. Keep stirring and add cardamom powder. Once this mixture is thick enough, turn off the flame and keep it aside.</li>
+                        <li>Knead the Kaju dough & apply the silver varq. Transfer the Kaju katli mixture to a bowl and knead it into a fine smooth dough. Make sure that the Kaju katli dough is smooth and crack-free. Take a tray and grease it with ghee. Then transfer the sweet dough and flatten it using a rolling pin. Apply the silver varq and let it set for some time.</li>
+                        <li>Cut into diamonds and indulge! Now, cut the Kaju Katli in the classic diamond shape and impress your loved ones with this delicious sweet.</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="boxb">
+                <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt19prodlp/products/p-delicious-kaju-katli-400-gm--101059-m.jpg" alt="Kaju Katli">
+            </div>
+        </div>
+        <div class="box2">
+            <div class="boxc">
+                <h1 id="jalebi">Jalebi</h1><br>
+                <p><h4>INGREDIENTS-</h4>
+                  ▢ 1/2 cup Maida/All Purpose Flour<br>
+                  ▢ 1 tablespoon Corn Flour (white corn starch) or Aararoot Powder<br>
+                  ▢ 1/4 teaspoon Baking Powder<br>
+                  ▢ A pinch of Turmeric Powder (to get yellow color)<br>
+                  ▢ 1/4 cup Curd (yogurt) <br>
+                  ▢ 1/4 cup Water</p><br>
+                <p><h4>INSTRUCTIONS</h4>
+                    <ol>
+                        <li>Heat ghee/oil in a wide mouthed flat pan over medium flame to deep fry the jalebis. In this recipe, oil + 2 tablespoons ghee is used for deep frying. To check whether oil is ready for deep frying or not, add a drop of batter into hot oil and if it comes immediately on the surface without changing the color, oil is ready. When oil is ready, make round jalebis by squeezing the bottle (or ziplock bag) and moving it in a circular direction starting from the center towards the outside (or start from outside and move towards the center). Make 2-3 spirals of batter (or more or less depending on the size of a pan). If the jalebi doesn’t have perfect shape, don’t worry, as it requires some practice to make the perfect round shape. Its shape doesn’t affect its taste and texture.</li>
+                        <li>Flip 2-3 times (or as needed) using a tong to deep fry them evenly.</li>
+                        <li>Deep fry them until light golden and crispy.</li>
+                        <li>Remove it from the oil using a tong and immediately put it into the warm sugar syrup. Syrup should be warm or little hot, it shouldn’t be cold. Keep it in syrup for approx. 2-minutes; flip it once after a minute.</li>
+                        <li>Remove it from the syrup using a fork and transfer it to a plate. Jalebi is now ready for serving.</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="boxd">
+                <img src="https://png.pngtree.com/png-vector/20231001/ourmid/pngtree-indian-jalebi-sweet-deep-png-image_10133866.png" alt="Jalebi">
+            </div>
+        </div>
+        <footer>
+            <div class="right">@jay's 2023 All Right Reserved</div>
+            <div class="policy"><a href="">Private Policy</a></div>
+        </footer>
+    </div>
+</body>
+</html>
